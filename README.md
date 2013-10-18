@@ -37,3 +37,38 @@ a simple tooltip plugin for jQuery
 	* hide: function(simpleTip){ // 隐藏后回调函数并返回当前ST对象 }
 	*/
 ```
+
+demo
+==================
+```
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery-SimpleTip</title>
+	<link rel="stylesheet" href="assert/js/gallery/jquery.simpleTip.css" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="assert/js/gallery/jquery.simpleTip.js"></script>
+	<style>
+		*{ margin: 0; padding: 0;}
+		body{ font-size: 12px; }
+		a{ text-decoration: none; }
+		#target{ margin: 100px 0 0 100px; width: 100px; height: 100px; background: #ffcccc; }
+	</style>
+</head>
+<body>
+	<div id="target"></div>
+	<script>
+	$(function(){
+		/* 相对页面 */
+		//$("#target").simpleTip({ content: 'tool tip' });
+		
+		//$("#target").simpleTip({ x: 200, y: 200, content: 'I\'m Here'});
+		
+		/* 相对元素 */
+		$("#target").simpleTip({ relative: true, x: 0, y: 0, content: 'I\'m Here'});
+	});
+	</script>
+</body>
+</html>
+```
