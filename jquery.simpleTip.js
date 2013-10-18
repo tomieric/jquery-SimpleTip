@@ -4,6 +4,7 @@
 * email: tomieric@gmail.com
 * create: 2013-10-17
 * blog: http://www.fenxiangyuan.com
+* version: 0.1
 */
 (function($){
 	var SimpleTip = function(obj, options){
