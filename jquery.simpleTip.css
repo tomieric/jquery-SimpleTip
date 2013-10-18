@@ -1,0 +1,28 @@
+/* 
+* 悬浮层 样式
+* author: tomieric
+* date: 2013-10-17
+*/
+.simple-tip{ position: fixed;  top: 200px; left: 100px; background: #fff; border: 3px solid #ccc; border: 3px solid rgba(192,192,192,.9);  border-radius: 2px; z-index: 999; min-width: 10em; }
+.simple-tip-arrow{ position: absolute; top: -13px; left: 10px; border: 0 0 5px 5px; border-left: 5px solid #ccc; border-left: 5px solid rgba(192,192,192,.9); border-top: 5px solid transparent; border-right: 5px solid transparent; border-bottom: 5px solid #ccc; border-bottom: 5px solid rgba(192,192,192,.9); width: 0; height: 0; font-size: 0; overflow: hidden;  }
+.simple-tip-close{ position: absolute; top: 1px; right: 7px; font: 13px Verdana,Tahoma, Arial, Helvetica, sans-serif; color: #666; text-shadow: inset 0 0 1px rgba(255,255,255,.8); }
+.simple-tip-close:focus{ outline: none}
+.simple-tip-close:hover{ color: #f30; }
+.simple-tip-title{ position: relative; background: #eee; padding: 2px 30px 2px 5px; border-bottom: 1px solid #d5d5d5; white-space: nowrap;  background-image: -moz-linear-gradient(top, #ffffff, #e5e5e5);  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e5e5e5)); background-image: -webkit-linear-gradient(top, #ffffff, #e5e5e5);  background-image: -o-linear-gradient(top, #ffffff, #e5e5e5); background-image: linear-gradient(to bottom, #ffffff, #e5e5e5); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe5e5e5', GradientType=0);  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
+.simple-tip-title span{ display: block; color: #666; }
+.simple-tip-content{ padding: 5px; }
+
+/* 箭头 在右上 */
+.simple-tip-tr .simple-tip-arrow{ left: auto; right: 10px; border-left: 5px solid transparent;  border-top: 5px solid transparent; border-right: 5px solid #ccc; border-right: 5px solid rgba(192,192,192,.9); border-bottom: 5px solid #ccc; border-bottom: 5px solid rgba(192,192,192,.9);}
+
+/* 箭头 在左侧 */
+.simple-tip-l .simple-tip-arrow{ top: 7px; left: -13px; right: auto; border-left: 5px solid transparent;  border-top: 5px solid transparent; border-right: 5px solid #ccc; border-right: 5px solid rgba(192,192,192,.9); border-bottom: 5px solid #ccc; border-bottom: 5px solid rgba(192,192,192,.9);}
+
+/* 箭头 在右侧 */
+.simple-tip-r .simple-tip-arrow{ top: 7px; left: auto; right: -13px; }
+
+/* 箭头 在右下 */
+.simple-tip-br .simple-tip-arrow{ top: auto; left: auto; bottom: -13px; right: 7px; border-left: 5px solid transparent;  border-bottom: 5px solid transparent; border-right: 5px solid #ccc; border-right: 5px solid rgba(192,192,192,.9); border-top: 5px solid #ccc; border-top: 5px solid rgba(192,192,192,.9); }
+
+/* 箭头 在左下 */
+.simple-tip-bl .simple-tip-arrow{ top: auto; right: auto; bottom: -13px; left: 7px; border-right: 5px solid transparent;  border-bottom: 5px solid transparent; border-left: 5px solid #ccc; border-left: 5px solid rgba(192,192,192,.9); border-top: 5px solid #ccc; border-top: 5px solid rgba(192,192,192,.9); }
